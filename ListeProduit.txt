@@ -1,0 +1,17 @@
+Position	Nom	Quantité	Prix
+A1	Coca	3	1.00
+A2	Coca Light	2	1.10
+A3	Fanta	1	0.8
+A4	Ice Tea	0	1.00
+B1	Toto	5	3.00
+B2	Tata	1	2.01
+B3	Titi	5	3.00
+B4	Tutu	1	1.05
+C1	Poto	5	2.50
+C2	Pata	1	2.01
+C3	Piti	5	3.00
+C4	Putu	1	2.01
+D1	Topo	5	3.00
+D2	Tapa	1	2.01
+D3	Tipi	5	3.00
+D4	Tupu	1	2.01
