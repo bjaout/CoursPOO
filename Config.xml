@@ -1,0 +1,42 @@
+<Application>
+	<UI>
+		<Titre>Acquisition de signaux paramétrable</Titre>
+	</UI>
+	<HW>
+		<RessourceSCPI>
+			<ID>IN1</ID>
+			<Nom>Multimètre ohmètre</Nom>
+			<Chemin>ASRL::XXX:::INSTR</Chemin>
+			<Commande>MEAS:RES?</Commande>
+			<Reponse>XXX.XXXE-X</Reponse>
+		</RessourceSCPI>
+		<RessourceAIPXI>
+			<Nom>Carte tension AI</Nom>
+			<Chemin>PXI1</Chemin>
+			<Voies>
+				<Input>
+					<Channel>
+						<ID>IN2</ID>
+						<Physique>ai0</Physique>
+					</Channel>
+				</Input>
+			</Voies>
+		</RessourceAIPXI>
+	</HW>
+	<Signaux>
+		<Input>
+			<Nom>Tension</Nom>
+			<HWChannel>IN2</HWChannel>
+			<Resolution>1,2</Resolution>
+			<Offset>10,0</Offset>
+			<Trigger>0,0</Trigger>
+		</Input>
+		<Input>
+			<Nom>Resistance</Nom>
+			<HWChannel>IN1</HWChannel>
+			<Resolution>1,0</Resolution>
+			<Offset>-1,0</Offset>
+			<Trigger>10,0</Trigger>
+		</Input>
+	</Signaux>
+</Application>
